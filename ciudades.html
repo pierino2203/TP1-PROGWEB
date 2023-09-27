@@ -1,152 +1,170 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Raleway:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/fontawesome/css/all.css">
-  </head>
-  <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <!-- <nav class="navbar bg-body-secondary">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Raleway:wght@600&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/fontawesome/css/all.css">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <div class="container-fluid">
+    <div class="row m-3">
+      <nav class="navbar navbar-expand-lg bg-body-secondary">
         <div class="container-fluid">
-          <div class="navbar-brand">
-            <img src="/img/images.png" alt="Logo" width="40" height="40">
-            Turismo de Tucuman
+          <img src="/img/images.png" alt="Logo" width="40" height="40">
+          <a class="navbar-brand" href="#">Turismo de Tucumán</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" style="margin-left: auto;">
+              <li class="nav-item">
+                <a class="nav-link text-dark" aria-current="page" href="index.html">Principal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-primary" aria-current="page" href="ciudades.html">Lugares</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" aria-current="page" href="quienes.html">Quiénes somos?</a>
+              </li>
+            </ul>
           </div>
-
         </div>
-      </nav> -->
-    <div class="container-fluid">
-        <div class="row m-3">
-            <nav class="navbar navbar-expand-lg bg-body-secondary">
-                <div class="container-fluid">
-                    <img src="/img/images.png" alt="Logo" width="40" height="40">
-                    <a class="navbar-brand" href="#">Turismo de Tucumán</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav" style="margin-left: auto;">
-                      <li class="nav-item">
-                        <a class="nav-link text-dark" aria-current="page" href="index.html">Principal</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active text-primary" aria-current="page" href="ciudades.html">Lugares</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-dark" aria-current="page" href="quienes.html">Quiénes somos?</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>  
-        </div>
-        <div class=" row m-3">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="index.html">Principal</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Lugares</li>
-                </ol>
-              </nav>
-        </div>
-        <div class="container">
-            <div class="row">
-                <h1 class="text-center">Lugares que tenes que visitar</h1>
-            </div>
-            <div class="row">
-                <div class="container-fluid">
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Ingresa el lugar" aria-label="Search">
-                      <button class="btn btn-primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                  </div>
-            </div>
-            <div class="row m-5">
-                <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col"></th>
-                        <th scope="col">Nombre</th>
-                        <th class="d-none d-md-table-cell">Descripción</th>
-                        <th scope="col">Ubicación</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td><img src="/img/card-casahistorica.jpeg" class="img-fluid" alt=""></td>
-                        <td>San Miguel De Tucumán</td>
-                        <td class="d-none d-md-table-cell"><p>San Miguel de Tucumán es la capital de la provincia de Tucumán, en el noroeste de Argentina. La Plaza Independencia, el núcleo ajetreado de la ciudad, alberga una catedral neoclásica y la gran Casa de Gobierno modernista. </p></td>
-                        <td><a href="https://earth.google.com/web/search/san+miguel+de+tucuman/@-26.83327932,-65.22266728,438.30789959a,41404.34186025d,35y,0h,0t,0r/data=CoABGlYSUAolMHg5NDIyMzc5MmQ2YzU2OTAzOjB4Zjg4ZDViOTJiNWM1NjUyNxmZ2q3A6846wCFRm93_7E1QwCoVc2FuIG1pZ3VlbCBkZSB0dWN1bWFuGAIgASImCiQJy1EgEYScN0ARy1EgEYScN8AZOnBuVbPGRUAhj2-OMPFfT8A" target="_blank">Click Aqui</a></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td><img src="img/card-tafi.jpeg" class="img-fluid" alt=""></td>
-                        <td>Tafi del Valle</td>
-                        <td class="d-none d-md-table-cell"><p>Tafí del Valle es una ciudad de los Valles Calchaquíes, en el noroeste de Argentina. Está rodeada de altas montañas con senderos, como Matadero, Muñoz y Pabellón. </p></td>
-                        <td><a href="https://earth.google.com/web/search/Taf%c3%ad+del+Valle,+Tucum%c3%a1n/@-26.84940445,-65.7086229,2031.07969882a,10370.45446611d,35y,0h,45t,0r/data=CoQBGloSVAolMHg5NDIyMTg3N2U4MGQyOGNmOjB4N2NmODA2OTAxMDcyZTg0NRmdly_UBto6wCHlKQajbW1QwCoZVGFmw60gZGVsIFZhbGxlLCBUdWN1bcOhbhgCIAEiJgokCUSnrWfZtjrAEd_PmM6u8zrAGRJHB0uiPlDAIWdwghHeXVDAKAI" target="_blank">Click Aqui</a></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td><img src="img/cardChoromoro.jpeg" class="img-fluid" alt=""></td>
-                        <td>Choromoro</td>
-                        <td class="d-none d-md-table-cell"><p>Choromoro es una localidad argentina ubicada en el Departamento Trancas de la Provincia de Tucumán. Se encuentra en el valle de los Choromoros, a 1 km de la Ruta Nacional 9</p></td>
-                        <td><a href="https://earth.google.com/web/search/Choromoro,+Tucum%c3%a1n/@-26.4115061,-65.3165939,798.29486064a,934.42232285d,35y,0h,45t,0r/data=Cn4aVBJOCiUweDk0MTg5ZGEwOWY5ODQ4Mjc6MHhjZWM5Y2RhYmVkMjJhZTJjGVA-8yhLaTrAIbarRmV5VFDAKhNDaG9yb21vcm8sIFR1Y3Vtw6FuGAIgASImCiQJ6rNbpdS1OsARMR4KR-zmOsAZkQ25apVpUMAhf_8gy1R3UMAoAg" target="_blank">Click Aqui</a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-            </div>
-        </div>
-        
-    </div> 
-    <div class="container-fluid">
-      <div class="row p-5 pb-0 bg-dark text-white">
-        <div class="col-xs-12 col-md-6 col-lg-3 pb-3">
-          <p class="h5 mb-3"><strong>Turismo de Tucumán</strong></p>
-          <p class="text-secondary mb-2"><strong>Codigo postal 4000</strong></p>
-          <p class="text-secondary mb-2"><strong>Superficie 91 km²</strong></p>
-          <p class="text-secondary mb-2"><strong>Hab 1,593 millones</strong></p>
-        </div>
-        <div class="col-xs-12 col-md-6 col-lg-3 pb-3">
-          <p class="h5 mb-3"><strong>Enlaces</strong></p>
-          <div class="mb-2">
-            <a href="index.html" class="text-secondary text-decoration-none">Principal</a>
-          </div>
-          <div class="mb-2">
-            <a href="ciudades.html" class="text-secondary text-decoration-none">Lugares</a>
-          </div>
-          <div class="mb-2">
-            <a href="quienes.html" class="text-secondary text-decoration-none">Quiénes Somos?</a>
-          </div>
-
-
-        </div>
-        <div class="col-xs-12 col-md-6 col-lg-3 pb-3">
-          <p class="h5 mb-3"><strong>Contacto</strong></p>
-          <p class="mb-2 text-secondary"><i class="fa-regular fa-envelope"></i> <a href="mailto:pierinoe@gmail.com" class="text-secondary text-decoration-none" target="_blank">pierinoe@gmail.com</a></p></p>
-          <p class="mb- text-secondary"><i class="fa-brands fa-github"></i> <a href="https://github.com/pierino2203"  class="text-secondary text-decoration-none" target="_blank">Github</a></p>
-          <p class="mb-2 text-secondary"><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/pierino-esteban-juncos-9a4804240/" class="text-secondary text-decoration-none" target="_blank">Linkedin</a></p>
-          
-        </div>
-        <div class="col-xs-12 col-md-6 col-lg-3 pb-3">
-          <p class="h5 mb-3"><strong>Alumno</strong></p>
-          <p class="mb-2 text-secondary"><strong>Juncos, Pierino Esteban</strong></p>
-          <p class="mb-2 text-secondary"><strong>Legajo: 57769</strong></p>
-          <p class="mb-2 text-secondary"><strong>Comision: 3k7</strong></p>
-          <p class="mb-2 text-secondary"><strong>Trabajo practico 1</strong></p>
-          <p class="mb-2 text-secondary"><strong>Programacion WEB</strong></p>
-        </div>
-        <div class="col-xs-12 pt-4">
-          <p class="text-center text-white"><img src="/img/images.png" alt="Logo" width="40" height="40"><strong>Turismo de Tucumán</strong> - Copyright - All reserved <i class="fa-regular fa-copyright"></i> - 2023</p>
+      </nav>
+    </div>
+    <div class=" row m-3">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Principal</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Lugares</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="row">
+        <h1 class="text-center">Lugares que tenes que visitar</h1>
+      </div>
+      <div class="row">
+        <div class="container-fluid">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Ingresa el lugar" aria-label="Search">
+            <button class="btn btn-primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
         </div>
       </div>
-      </div> 
+      <div class="row m-5">
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col"></th>
+              <th scope="col">Nombre</th>
+              <th class="d-none d-md-table-cell">Descripción</th>
+              <th scope="col">Ubicación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td><img src="/img/card-casahistorica.jpeg" class="img-fluid" alt=""></td>
+              <td>San Miguel De Tucumán</td>
+              <td class="d-none d-md-table-cell">
+                <p>San Miguel de Tucumán es la capital de la provincia de Tucumán, en el noroeste de Argentina. La Plaza
+                  Independencia, el núcleo ajetreado de la ciudad, alberga una catedral neoclásica y la gran Casa de
+                  Gobierno modernista. </p>
+              </td>
+              <td>
+                <a href="https://earth.google.com/web/search/san+miguel+de+tucuman/@-26.83327932,-65.22266728,438.30789959a,41404.34186025d,35y,0h,0t,0r/data=CoABGlYSUAolMHg5NDIyMzc5MmQ2YzU2OTAzOjB4Zjg4ZDViOTJiNWM1NjUyNxmZ2q3A6846wCFRm93_7E1QwCoVc2FuIG1pZ3VlbCBkZSB0dWN1bWFuGAIgASImCiQJy1EgEYScN0ARy1EgEYScN8AZOnBuVbPGRUAhj2-OMPFfT8A"
+                  target="_blank">Click Aqui</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td><img src="img/card-tafi.jpeg" class="img-fluid" alt=""></td>
+              <td>Tafi del Valle</td>
+              <td class="d-none d-md-table-cell">
+                <p>Tafí del Valle es una ciudad de los Valles Calchaquíes, en el noroeste de Argentina. Está rodeada de
+                  altas montañas con senderos, como Matadero, Muñoz y Pabellón. </p>
+              </td>
+              <td><a
+                  href="https://earth.google.com/web/search/Taf%c3%ad+del+Valle,+Tucum%c3%a1n/@-26.84940445,-65.7086229,2031.07969882a,10370.45446611d,35y,0h,45t,0r/data=CoQBGloSVAolMHg5NDIyMTg3N2U4MGQyOGNmOjB4N2NmODA2OTAxMDcyZTg0NRmdly_UBto6wCHlKQajbW1QwCoZVGFmw60gZGVsIFZhbGxlLCBUdWN1bcOhbhgCIAEiJgokCUSnrWfZtjrAEd_PmM6u8zrAGRJHB0uiPlDAIWdwghHeXVDAKAI"
+                  target="_blank">Click Aqui</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td><img src="img/cardChoromoro.jpeg" class="img-fluid" alt=""></td>
+              <td>Choromoro</td>
+              <td class="d-none d-md-table-cell">
+                <p>Choromoro es una localidad argentina ubicada en el Departamento Trancas de la Provincia de Tucumán.
+                  Se encuentra en el valle de los Choromoros, a 1 km de la Ruta Nacional 9</p>
+              </td>
+              <td><a
+                  href="https://earth.google.com/web/search/Choromoro,+Tucum%c3%a1n/@-26.4115061,-65.3165939,798.29486064a,934.42232285d,35y,0h,45t,0r/data=Cn4aVBJOCiUweDk0MTg5ZGEwOWY5ODQ4Mjc6MHhjZWM5Y2RhYmVkMjJhZTJjGVA-8yhLaTrAIbarRmV5VFDAKhNDaG9yb21vcm8sIFR1Y3Vtw6FuGAIgASImCiQJ6rNbpdS1OsARMR4KR-zmOsAZkQ25apVpUMAhf_8gy1R3UMAoAg"
+                  target="_blank">Click Aqui</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row p-5 pb-0 bg-dark text-white">
+      <div class="col-xs-12 col-md-6 col-lg-3 pb-3">
+        <p class="h5 mb-3"><strong>Turismo de Tucumán</strong></p>
+        <p class="text-secondary mb-2"><strong>Codigo postal 4000</strong></p>
+        <p class="text-secondary mb-2"><strong>Superficie 91 km²</strong></p>
+        <p class="text-secondary mb-2"><strong>Hab 1,593 millones</strong></p>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3 pb-3">
+        <p class="h5 mb-3"><strong>Enlaces</strong></p>
+        <div class="mb-2">
+          <a href="index.html" class="text-secondary text-decoration-none">Principal</a>
+        </div>
+        <div class="mb-2">
+          <a href="ciudades.html" class="text-secondary text-decoration-none">Lugares</a>
+        </div>
+        <div class="mb-2">
+          <a href="quienes.html" class="text-secondary text-decoration-none">Quiénes Somos?</a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3 pb-3">
+        <p class="h5 mb-3"><strong>Contacto</strong></p>
+        <p class="mb-2 text-secondary"><i class="fa-regular fa-envelope"></i> <a href="mailto:pierinoe@gmail.com"
+            class="text-secondary text-decoration-none" target="_blank">pierinoe@gmail.com</a></p>
+        </p>
+        <p class="mb- text-secondary"><i class="fa-brands fa-github"></i> <a href="https://github.com/pierino2203"
+            class="text-secondary text-decoration-none" target="_blank">Github</a></p>
+        <p class="mb-2 text-secondary"><i class="fa-brands fa-linkedin"></i> <a
+            href="https://www.linkedin.com/in/pierino-esteban-juncos-9a4804240/"
+            class="text-secondary text-decoration-none" target="_blank">Linkedin</a></p>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3 pb-3">
+        <p class="h5 mb-3"><strong>Alumno</strong></p>
+        <p class="mb-2 text-secondary"><strong>Juncos, Pierino Esteban</strong></p>
+        <p class="mb-2 text-secondary"><strong>Legajo: 57769</strong></p>
+        <p class="mb-2 text-secondary"><strong>Comision: 3k7</strong></p>
+        <p class="mb-2 text-secondary"><strong>Trabajo practico 1</strong></p>
+        <p class="mb-2 text-secondary"><strong>Programacion WEB</strong></p>
+      </div>
+      <div class="col-xs-12 pt-4">
+        <p class="text-center text-white"><img src="/img/images.png" alt="Logo" width="40" height="40"><strong>Turismo
+            de Tucumán</strong> - Copyright - All reserved <i class="fa-regular fa-copyright"></i> - 2023</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
